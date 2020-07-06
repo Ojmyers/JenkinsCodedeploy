@@ -9,7 +9,7 @@ pipeline {
         EMAIL_RECIPIANTS = 'ljolliff@cynerge.com'
         NEXUS_USER = credentials('nexus-user')
         NEXUS_PASS = credentials('nexus-pass')
-        NEXUS_REPO = credentials('nexus-raw-repo')
+        NEXUS_REPO = credentials('nexus-repo')
         APP_SOURCE = './src/**/**/**/**.html'
         STATUS_SUCCESS = ''
         JENKINS_URL = "${JENKINS_URL}"
