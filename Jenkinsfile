@@ -66,8 +66,8 @@ pipeline {
                     }
                 }
             }
-
         }
+    }
       
     cleanup {
         script {
@@ -83,6 +83,5 @@ pipeline {
 
             cleanWs()
         }
-    }
     }
 }
