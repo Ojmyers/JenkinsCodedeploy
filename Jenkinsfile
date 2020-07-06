@@ -31,7 +31,8 @@ pipeline {
             }
 
             steps {
-                sh "curl -v --user '${NEXUS_USER}:${NEXUS_PASS}' --upload-file \"{\$(echo *.html | tr ' ' ',')}\" ${NEXUS_REPO}Pa11y/${JOB_NAME}/${BRANCH_NAME}/${BUILD_NUMBER}/"
+                sh 'printenv'
+                sh "curl -v --user '${NEXUS_USER}:${NEXUS_PASS}' --upload-file \"{\$(echo *.html | tr ' ' ',')}\" ${NEXUS_REPO}Pa11y/${JOB_NAME}/${env.BRANCH_NAME}/${BUILD_NUMBER}/"
                 
             }
         }
