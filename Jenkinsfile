@@ -1,5 +1,3 @@
-def shipyardBuildBadge = addEmbeddableBadgeConfiguration(id: "shipyard-build", subject: "Shipyard Build")
-
 pipeline {
     agent {
         node {
