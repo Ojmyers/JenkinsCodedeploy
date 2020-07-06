@@ -35,7 +35,7 @@ pipeline {
                 sh 'touch joey.html'
                 sh 'chmod +w joey.html'
                 sh "echo 'Hello world!' >> joey.html"
-                sh "curl -v --user '${NEXUS_USER}:${NEXUS_PASS}' --upload-file \"{\$(echo *.html | tr ' ' ',')}\" ${NEXUS_REPO}Pa11y/${JOB_NAME}/${env.BRANCH_NAME}/${BUILD_NUMBER}/"
+                sh "curl -v --user '${NEXUS_USER}:${NEXUS_PASS}' --upload-file \"{\$(echo *.html | tr ' ' ',')}\" ${NEXUS_REPO}Pa11y/${JOB_NAME}/${BUILD_NUMBER}/"
                 
             }
         }
