@@ -68,20 +68,3 @@ pipeline {
             }
         }
     }
-      
-    cleanup {
-        script {
-            shipyardBuildBadge.setStatus('running')
-            try {
-                    shipyardBuildBadge.setStatus('passing')
-                } catch (Exception err) {
-                    shipyardBuildBadge.setStatus('failing')
-                    shipyardBuildBadge.setColor('red')
-
-                    error 'Build failed'
-                }
-
-            cleanWs()
-        }
-    }
-}
