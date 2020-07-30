@@ -1,5 +1,5 @@
 pipeline {
-
+  agent any
     environment {
         EMAIL_RECIPIANTS = 'ljolliff@cynerge.com'
         NEXUS_USER = credentials('nexus-user')
