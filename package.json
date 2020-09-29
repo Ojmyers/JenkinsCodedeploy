@@ -1,10 +1,24 @@
-{	
-"scripts": {
-    "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "eslint ./src/**/**.ts",
-    "e2e": "ng e2e",
-    "dummy": "exit 0"
-  },
+{
+	"name": "localhop_admin_webapp",
+	"version": "1.0.0",
+	"scripts": {
+		"install": "npm install --prefix ./wp-content/themes/localhop-admin/",
+		"build": "npm run build --prefix ./wp-content/themes/localhop-admin/",
+		"build-production": "npm run build-production --prefix ./wp-content/themes/localhop-admin/",
+		"test-unit": "npm run test-unit --prefix ./wp-content/themes/localhop-admin/",
+		"lint-js": "eslint ./wp-content/themes/localhop-admin/assets/js/src/webapp/**/*.js",
+		"lint-php": "phplint *.php"
+	},
+	"dependencies": {
+		"chromedriver": "^81.0.0",
+		"eslint-config-prettier": "^6.12.0",
+		"geckodriver": "^1.19.1",
+		"phplint": "^2.0.3",
+		"prettier": "^2.1.2",
+		"selenium-webdriver": "^4.0.0-alpha.7"
+	},
+	"devDependencies": {
+		"eslint": "^7.10.0",
+		"eslint-plugin-prettier": "^3.1.4"
+	}
 }
