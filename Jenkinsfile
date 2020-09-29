@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Installing...'
                 sh 'echo $GIT_BRANCH'
-                sh 'npm ci'
+                sh 'npm install'
             }
         }
     stage('Setup parameters') {
