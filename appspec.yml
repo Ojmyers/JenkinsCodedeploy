@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: https://github.com/Ojmyers/JenkinsCodedeploy.git
+  - source: /
     destination: /home/ec2-user/app
