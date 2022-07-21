@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: source /home/ec2-user/.bash_profile
     destination: /var/www/html
+hooks:
+ ApplicationStart:
+    - location: appstart.sh
+      timeout: 300
+      runas: root
