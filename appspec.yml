@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /var/www/html
 hooks:
  ApplicationStart:
-    - location: /var/www/html/appstart.sh
+    - location: appstart.sh
       timeout: 300
       runas: root
