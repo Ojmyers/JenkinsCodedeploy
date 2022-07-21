@@ -1,5 +1,4 @@
 #!/bin/bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-. ~/.nvm/nvm.sh
-nvm install --lts
-npm install
+rm -rf /etc/yum.repos.d/nodesource-el*
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash -
+yum install nodejs --enablerepo=nodesource
