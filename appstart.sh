@@ -1,4 +1,5 @@
 #!/bin/bash
-$ curl --silent --location https://rpm.nodesource.com/setup_16.x | bash -
-$ yum -y install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install --lts
 npm install
