@@ -1,3 +1,5 @@
 #!/bin/bash
-sudo yum install nodejs npm --enablerepo=epel
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install --lts
 npm install
