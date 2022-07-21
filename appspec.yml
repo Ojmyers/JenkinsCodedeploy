@@ -5,7 +5,6 @@ files:
     destination: /var/www/html
 hooks:
  ApplicationStart:
-    - source: /home/ec2-user/.bash_profile
     - location: appstart.sh
       timeout: 300
       runas: root
