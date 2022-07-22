@@ -1,7 +1,10 @@
 version: 0.0
 os: linux
+files:
+  - source: /downloads/JenkinsCodedeploy-master.zip
+    destination: /var/www/html
 hooks:
  ApplicationStart:
-    - location: appstart.sh
+    - location: /var/www/html/appstart.sh
       timeout: 300
       runas: root
