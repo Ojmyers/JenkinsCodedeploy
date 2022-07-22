@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /downloads/JenkinsCodedeploy-master.zip
     destination: /var/www/html
 hooks:
  ApplicationStart:
