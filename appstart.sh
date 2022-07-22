@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /var/www/html
-npm start
+/root/.nvm/versions/node/v16.16.0/bin/npm start
